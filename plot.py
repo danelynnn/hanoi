@@ -51,12 +51,12 @@ def func(game_state):
 
     return bars
 
-def show_anim(game_states):
+def show_anim(game_states, speed=500):
     axes.xaxis.set_visible(False)
     axes.spines['left'].set_visible(False)
     axes.yaxis.set_visible(False)
     axes.spines['top'].set_visible(False)
     axes.spines['right'].set_visible(False)
 
-    animation = FuncAnimation(fig, func, frames=game_states, interval=500)
+    animation = FuncAnimation(fig, func, frames=game_states, interval=speed)
     plt.show()

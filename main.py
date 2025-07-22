@@ -3,7 +3,7 @@ import copy
 from hanoi import Hanoi
 from plot import show_anim
 
-game = Hanoi([[4, 3], [1], [2]])
+game = Hanoi([[], [8, 7, 6, 5, 4, 3, 2, 1], []])
 game_states = [copy.deepcopy(game)]
 
 
@@ -57,6 +57,6 @@ def hanoi_start():
 
 
 hanoi_start()
-show_anim(game_states)
+show_anim(game_states, 100)
 
 print(game.move_count)
