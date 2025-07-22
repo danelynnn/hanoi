@@ -55,8 +55,7 @@ def hanoi_start():
     hanoi(rings[-1], 2)
 
 
-
-hanoi_start()
-show_anim(game_states, 100)
-
-print(game.move_count)
+if __name__ == "__main__":
+    hanoi_start()
+    show_anim(game_states, 100)
+    print(game.move_count)
